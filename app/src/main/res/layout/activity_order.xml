@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lab4.Order.Order">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="Đặt thức ăn và đồ uống"
+            android:textColor="#4A4A4A"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnOrderFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:text="Chọn thức ăn"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/btnOrderDrink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Chọn đồ uống"
+            app:layout_constraintEnd_toEndOf="@+id/btnOrderFood"
+            app:layout_constraintStart_toStartOf="@+id/btnOrderFood"
+            app:layout_constraintTop_toBottomOf="@+id/btnOrderFood" />
+
+        <Button
+            android:id="@+id/btnQuit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Thoát"
+            app:layout_constraintEnd_toEndOf="@+id/btnOrderDrink"
+            app:layout_constraintStart_toStartOf="@+id/btnOrderDrink"
+            app:layout_constraintTop_toBottomOf="@+id/btnOrderDrink" />
+
+        <TextView
+            android:id="@+id/tvOrderedFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="$OrderedFood"
+            android:textColor="#4A4A4A"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/btnQuit"
+            app:layout_constraintStart_toStartOf="@+id/btnQuit"
+            app:layout_constraintTop_toBottomOf="@+id/btnQuit" />
+
+        <TextView
+            android:id="@+id/tvOrderedDrink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="$OrderedDrink"
+            android:textColor="#4A4A4A"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvOrderedFood"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvOrderedFood"
+            app:layout_constraintTop_toBottomOf="@+id/tvOrderedFood" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
